@@ -1,0 +1,9 @@
+l=[[1, 2], [3, 4], [5, 6, 7]]
+
+def reverselist(liste):
+    for i in liste:
+        if type(i)==list:
+            [i.reverse()]
+    return [element for element in reversed(liste)]
+        
+print(reverselist(l))
