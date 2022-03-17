@@ -1,0 +1,15 @@
+l=[[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+flatten_list=list()
+
+def flattenlist(liste):
+    
+    for element in liste:
+        if type(element)!=list:
+            flatten_list.append(element)
+        if type(element)==list:
+            flattenlist(element)
+    return flatten_list       
+
+
+flattenlist(l)
+print(flatten_list)
