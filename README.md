@@ -1,0 +1,1 @@
+# Patika.dev_PythonTemel_Proje
